@@ -4,6 +4,7 @@ import { generateToken } from '../middleware/auth.js'
 export const register = async (req, res) => {
   try {
     const { name, email, password } = req.body
+    console.log(name,email,password)
     const exists = await User.findOne({ email })
     if (exists) return res.status(400).json({ message: 'Email already in use' })
 
