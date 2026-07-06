@@ -9,10 +9,10 @@ const PORT = process.env.PORT || 3000
 
 app.use(cors({
   origin: [
-    'https://vercel.app', // Your live Vercel URL
-    'http://localhost:5173'              // Keeps local development working perfectly
+    'https://my-ecom-coral.vercel.app', // <-- Put your real Vercel URL here!
+    'http://localhost:5173'
   ],
-  credentials: true, // Allows cookies or auth tokens if your app needs them
+  credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS']
 }));
 app.use(express.json())
