@@ -203,7 +203,7 @@ const Cart = () => {
               <CheckCircle size={32} className="text-emerald-500" />
             </div>
             <h2 className="text-lg font-semibold text-text-main mb-1">Order Placed Successfully!</h2>
-            <p className="text-sm text-text-muted mb-6">Your fake transaction was completed. Thank you for shopping!</p>
+            <p className="text-sm text-text-muted mb-6">Your order was placed successfully. Thank you for shopping!</p>
             <Link
               to="/shop"
               className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-primary text-text-on-primary text-sm font-semibold hover:bg-primary-hover transition-colors"

@@ -12,7 +12,6 @@ const loadSettings = () => {
   return {
     emailNotifications: true,
     maintenanceMode: false,
-    profile: { name: 'John Doe', email: 'john@example.com' },
   }
 }
 
@@ -21,7 +20,7 @@ const Settings = () => {
   if (user?.role !== 'Admin') return <Navigate to="/products" replace />
   const { dark, toggle } = useTheme()
   const [settings, setSettings] = useState(loadSettings)
-  const [profile, setProfile] = useState(settings.profile)
+  const [profile, setProfile] = useState({ name: user?.name || '', email: user?.email || '' })
   const [saved, setSaved] = useState(false)
 
   useEffect(() => {
