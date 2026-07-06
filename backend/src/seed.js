@@ -9,8 +9,8 @@ const seed = async () => {
   const existing = await User.findOne({ email: 'admin@example.com' })
   if (!existing) {
     await User.create({
-      name: 'Joe the admin',
-      email: 'admin@example.com',
+      name: 'admin100',
+      email: 'admin100@example.com',
       password: 'pass123',
       role: 'Admin',
     })
