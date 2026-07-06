@@ -6,7 +6,7 @@ import Product from './models/Product.js'
 const seed = async () => {
   await connectDB()
 
-  const existing = await User.findOne({ email: 'admin@example.com' })
+  const existing = await User.findOne({ email: 'admin100@example.com' })
   if (!existing) {
     const newAdmin = await User.create({
       name: 'admin100',
